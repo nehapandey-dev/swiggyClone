@@ -24,6 +24,6 @@
 `Pending challenge` `🤔`
 - React Router 
 - Responsive
-- Cart 
-- filter each Crads
+- Dynamic Cart button
+- filter each Cards
 - filter Ratings and many more to complete
