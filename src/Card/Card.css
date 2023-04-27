@@ -1,0 +1,43 @@
+.conatiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px;
+  }
+  .card-img{
+    width: 180px;
+  }
+  .star{
+    font-size: 12px;
+  }
+  .rating{
+    font-size: 13px;
+    margin-top: 3px;
+  }
+  .card-conatiner{
+    margin-bottom: 60px;
+  }
+  
+  .cuisines{
+    font-size: 12px;
+  }
+  .rating-time{
+  font-size: 13px;
+  }
+  .box{
+   width: 280px;
+   height: auto;
+   padding: 16px;
+  }
+  .box:hover{
+    box-shadow: inset 0 0 2px
+  }
+  
+  
+  .view{
+    color: rgb(59, 127, 216);
+    margin-left: 60px;
+  }
+  
+  
+  

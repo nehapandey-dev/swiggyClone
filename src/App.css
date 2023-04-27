@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.hero-conatiner{
+  background-color: rgb(32, 35, 48);
+}
+
+.hero-img{
+  width: 280px;
+  height: 280px;
+  margin: 40px;
+  padding-top: 12px;
+}
+.hero-img:hover{
+  animation: pulse;
+  animation-duration:1s;
+}
+
+.filter{
+  margin-left: 14px;
+  border-style: none;
+  background: none;
+  font-size: 16px;
+}
+.filter:hover{
+  color: rgb(236, 130, 8);
+}
+.filter-icon{
+  font-size: 26px;
+}

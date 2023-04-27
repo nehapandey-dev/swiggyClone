@@ -1,0 +1,114 @@
+span {
+    border-radius: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+    color: rgb(28, 27, 27);
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.logo:hover {
+    animation: pulse;
+    animation-duration: 1s;
+}
+
+.power {
+    position: absolute;
+    top: 25px;
+    font-size: 13px;
+    color: rgb(241, 126, 24);
+    background: none;
+    border-style: none;
+}
+
+.menu-right {
+    margin: 3px;
+}
+
+.location {
+    border-style: none;
+    font-weight: bold;
+    
+}
+
+.location:hover {
+    color: rgb(244, 108, 46);
+    text-decoration: underline;
+    
+}
+
+.text-color {
+    color: rgb(132, 130, 132);
+    background: none;
+    font-size: 14px;
+    border-style: none;
+
+}
+
+.text-color:hover {
+    text-decoration: none;
+}
+
+.menubar {
+    margin: 24px;
+}
+
+.right-nav {
+    margin-top: 10px;
+}
+
+.arrow {
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(244, 108, 46);
+}
+
+.icon {
+    margin: 5px;
+    font-size: 20px;
+}
+
+.search-button {
+    border-style: none;
+    background: none;
+}
+
+.search-button:hover {
+    color: rgb(244, 108, 46);
+}
+
+.offer-button {
+    border-style: none;
+    background: none;
+}
+
+.offer-button:hover {
+    color: rgb(244, 108, 46);
+}
+
+.help-button {
+    border-style: none;
+    background: none;
+}
+
+.help-button:hover {
+    color: rgb(244, 108, 46);
+}
+
+.user-button {
+    border-style: none;
+    background: none;
+}
+
+.user-button:hover {
+    color: rgb(244, 108, 46);
+}
+
+.cart-button {
+    border-style: none;
+    background: none;
+}
+
+.cart-button:hover {
+    color: rgb(244, 108, 46);
+}
