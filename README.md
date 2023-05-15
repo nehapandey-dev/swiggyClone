@@ -22,8 +22,8 @@
 - Responsive
 
 `Pending challenge` `🤔`
-- React Router 
+- React Router ✅
 - Responsive
-- Dynamic Cart button
-- filter each Cards
+- Dynamic Cart button✅
+- filter each Cards✅
 - filter Ratings and many more to complete
