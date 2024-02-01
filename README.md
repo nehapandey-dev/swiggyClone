@@ -23,7 +23,19 @@
 
 `Pending challenge` `🤔`
 - React Router ✅
+  Install @reduxjs/toolkit & react redux 
+  Build our own store & connect our store to our app
+  Slice (cartslice)
+  dispatch(action)
+  Selector
 - Responsive
 - Dynamic Cart button✅
 - filter each Cards✅
 - filter Ratings and many more to complete
+
+`Testing ` 
+-Unit testing : test react component in isolation 
+- intrigation testing
+- end to end testing 
+
+react testing library uses jest

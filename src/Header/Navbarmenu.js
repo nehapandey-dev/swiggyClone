@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { FiSearch } from "react-icons/fi";
 import { CiPercent } from "react-icons/ci";
 import { TbHelp } from "react-icons/tb";
@@ -7,22 +7,21 @@ import { RiArrowDownSLine } from "react-icons/ri";
 import "./Navbar.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import ResturantData from "../components/ResturantData";
-
-function filterData(searchData, resData) {
-  const filterData = resData.filter((item) =>
-    item.data.name.includes(searchData)
-  );
-  return filterData;
-}
+import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
+// import userContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 
 const Navbarmenu = () => {
-  const [resData, setResData] = useState(ResturantData);
-  const [searchData, setSearchData] = useState("");
+  const onlineStatus = useOnlineStatus()
+  
+
+// subscribing to the stire using our selector 
+const cartItems = useSelector((store)=>store.cart.items)
   return (
-    <div>
-      <div className="container d-flex justify-content-between">
-        <div className="left-nav d-flex justify-content-around">
+    <div className="w-100 bg-white z-4">
+      <div className="container ">
+        <div className=" ">
           <div>
             <Navbar>
               <img
@@ -41,49 +40,52 @@ const Navbarmenu = () => {
             </Navbar>
           </div>
         </div>
-        <div className="right-nav d-flex justify-content-around">
+        <div className=" d-flex pt-2">
+          <Link to={'/search'} className="menubar bg-white">
           <button
-            value={searchData}
-            onChange={(e) => {
-              setSearchData(e.target.value);
-            }}
-            className="search-button"
-            onClick={() => {
-              const data = filterData(searchData, resData);
-              setResData(data);
-            }}
+            className="search-btn border-0 "
           >
-            <FiSearch className="icon" />
+            <FiSearch className="icon mx-3" />
             Search
           </button>
+          </Link>
 
           <Nav.Link className="menubar">
-            <button className="offer-button">
-              <CiPercent className="icon" />
+            <button className="offer-button d-flex gap-1 justify-content-around">
+              <CiPercent className="icon mt-1" />
               Offers
             </button>{" "}
             <span className="power">New</span>
           </Nav.Link>
           <Nav.Link className="menubar">
-            <button className="help-button">
-              <TbHelp className="icon" />
+            <button className="help-button d-flex">
+              <TbHelp className="icon mt-1" />
               Help
             </button>
           </Nav.Link>
-          <Nav.Link className="menubar">
-            <button className="user-button">
-              <BiUser className="icon" />
+          <Link className="menubar text-decoration-none" to='/user'>
+            <button className="user-button d-flex text-decoration-none">
+              <BiUser className="icon mt-1" />
               User
+              <p>{onlineStatus ? <span className="green-dot">●</span> : '🔴'}</p>
             </button>
-          </Nav.Link>
+          </Link>
+
+          <Link to='/cart' className="menubar">
+            <button className="cart-button" >
+              <span className="cart-circle">{cartItems.length}</span>Cart
+            </button>
+          </Link>
           <Nav.Link className="menubar">
-            <button className="cart-button">
-              <span className="cart-circle">0</span>Cart
+            <button className="help-button">
+             <p>Login </p>
+            
             </button>
           </Nav.Link>
         </div>
       </div>
     </div>
+
   );
 };
 

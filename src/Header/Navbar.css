@@ -12,13 +12,27 @@ span {
     animation-duration: 1s;
 }
 
+.container{
+    margin-left: 32px;
+    display: flex;
+    justify-content:space-between ;
+    
+}
+
 .power {
-    position: absolute;
-    top: 25px;
+    position: relative;
+    bottom: 60%;
+    left: 90%;
     font-size: 13px;
     color: rgb(241, 126, 24);
     background: none;
     border-style: none;
+}
+
+.green-dot {
+    color: green;
+    border: none;
+    text-decoration: none;
 }
 
 .menu-right {
@@ -28,13 +42,22 @@ span {
 .location {
     border-style: none;
     font-weight: bold;
-    
+
 }
 
 .location:hover {
     color: rgb(244, 108, 46);
     text-decoration: underline;
-    
+
+}
+
+.search-btn:hover {
+    color: rgb(244, 108, 46);
+
+}
+
+.search-btn {
+    background: none;
 }
 
 .text-color {
@@ -43,6 +66,19 @@ span {
     font-size: 14px;
     border-style: none;
 
+}
+
+.search-icon {
+    position: relative;
+    right: 32px;
+    top: 12px;
+    width: 20px;
+    height: 20px;
+
+}
+
+.search-icon:hover {
+    cursor: pointer;
 }
 
 .text-color:hover {
@@ -60,20 +96,6 @@ span {
 .arrow {
     font-size: 18px;
     font-weight: bolder;
-    color: rgb(244, 108, 46);
-}
-
-.icon {
-    margin: 5px;
-    font-size: 20px;
-}
-
-.search-button {
-    border-style: none;
-    background: none;
-}
-
-.search-button:hover {
     color: rgb(244, 108, 46);
 }
 
@@ -98,6 +120,7 @@ span {
 .user-button {
     border-style: none;
     background: none;
+    text-decoration: none;
 }
 
 .user-button:hover {

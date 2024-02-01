@@ -1,6 +1,8 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
+import Resturants from './Resturants';
+import Body from '../Card/Body'
 
 function HeroSection() {
   const responsive = {
@@ -22,9 +24,10 @@ function HeroSection() {
     }
   };
   return (
+    <>
     <div className="hero-conatiner">
-      <div className="slide-img">
-        <Carousel responsive={responsive}>
+      <div className="slide-img ">
+        <Carousel responsive={responsive} className=''>
           <img className="hero-img" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/zpkkdkmvlj5cuvqbc50t" alt="img"/>
           <img className="hero-img" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/lzkjv3sxwwjkzg0vxpvt" alt="img"/>
           <img className="hero-img" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/tgnvusbs3fnzz7xupeno" alt="img"/>
@@ -35,6 +38,9 @@ function HeroSection() {
         ;
       </div>
     </div>
+    <Resturants/>
+    <Body/>
+    </>
   )
 }
 

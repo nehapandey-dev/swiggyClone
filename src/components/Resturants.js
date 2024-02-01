@@ -1,36 +1,30 @@
-import React, { useState } from "react";
-import { FcClearFilters } from "react-icons/fc";
-import ResturantData from "../components/ResturantData";
+
+
+
 
 function Resturants() {
-  const [resData, setResData] = useState(ResturantData);
+ 
   return (
     <>
-      <section className="d-flex justify-content-around pt-5">
+      <section className="text-center pt-5">
         <div className="right">
-          <h3>1734 restaurants</h3>
+          <h3>Restaurants with online food delivery in Bangalore</h3>
         </div>
-        <div className="d-flex justify-content-between">
-          <button className="filter">Delivery Time</button>
-          <button className="filter">Relevance</button>
+        <div className="d-flex justify-content-center pt-4">
+          <button className="filter border p-1 px-3 rounded-5">Delivery Time</button>
+          <button className="filter border p-1 px-3 rounded-5">Relevance</button>
           <button
-            className="filter"
-            onClick={() => {
-              const filteredList = resData.filter(
-                (resturant) => resturant.data.avgRating > 4
-              );
-              setResData(filteredList);
-            }}
+            className="filter border p-2 rounded-5"
           >
             Rating
           </button>
-          <button className="filter">Cost: Low To High</button>
-          <button className="filter">Cost: High To Low</button>
-          <button className="filter">Filters </button>
-          <FcClearFilters className="filter-icon" />
+          <button className="filter border p-1 px-3 rounded-5">Cost: Low To High</button>
+          <button className="filter border p-1 px-3 rounded-5">Cost: High To Low</button>
+          <button className="filter border p-1 px-3 rounded-5">Filters </button>
+        
         </div>
       </section>
-      <hr className="" />
+      <hr />
     </>
   );
 }
