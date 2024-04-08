@@ -11,11 +11,10 @@ function RestroMenu() {
 
   if (resMenu === null) return <h1 className='mx-5'>Loading...</h1>
 
-  const { name, avgRating, totalRatingsString, costForTwoMessage, cuisines, areaName, feeDetails, aggregatedDiscountInfo, cloudinaryImageId } = resMenu?.cards[0]?.card?.card?.info
+  const { name, avgRating, totalRatingsString, costForTwoMessage, cuisines, areaName, feeDetails, aggregatedDiscountInfo, cloudinaryImageId } = resMenu?.cards[2]?.card?.card?.info
 
-  // const itemCards = resMenu.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[5]?.card?.card?.itemCards
 
-  const categories = resMenu.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(cat => cat.card?.card?.["@type"] ===
+  const categories = resMenu.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(cat => cat.card?.card?.["@type"] ===
     "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory")
 
 

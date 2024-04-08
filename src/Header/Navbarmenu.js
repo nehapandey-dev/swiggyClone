@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React from "react";
 import { FiSearch } from "react-icons/fi";
 import { CiPercent } from "react-icons/ci";
 import { TbHelp } from "react-icons/tb";
@@ -9,7 +9,6 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
-// import userContext from "../utils/UserContext";
 import { useSelector } from "react-redux";
 
 const Navbarmenu = () => {
@@ -19,8 +18,8 @@ const Navbarmenu = () => {
 // subscribing to the stire using our selector 
 const cartItems = useSelector((store)=>store.cart.items)
   return (
-    <div className="w-100 bg-white z-4">
-      <div className="container ">
+    <div className="bg-white z-4">
+      <div className="container">
         <div className=" ">
           <div>
             <Navbar>

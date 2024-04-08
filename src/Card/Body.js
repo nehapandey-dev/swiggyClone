@@ -15,7 +15,7 @@ function Body() {
 
   return (
     <div className="card rounded">
-      <div className="box d-flex flex-wrap w-100 gap-5 justify-content-center rounded">
+      <div className="box d-flex flex-wrap w-100 gap-5 justify-content-center">
         {
           listOfRestaurants.map((res) => (
             <Link to={'/resturants/'+ res.info.id} key={res.info.id} className='text-decoration-none'><AllCards resData={res} /></Link>

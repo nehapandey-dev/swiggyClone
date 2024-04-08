@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ItemList from './ItemList';
 
 function ResturantCaterory({data,showItems,setShowIndex,showIndex}) {

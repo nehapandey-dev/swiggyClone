@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { FiSearch } from "react-icons/fi";
 import { API_URL, Image_API } from '../utils/constants';
-import { Link } from 'react-router-dom';
+
 
 
 function Search() {

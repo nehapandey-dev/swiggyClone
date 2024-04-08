@@ -1,5 +1,6 @@
 import React from "react";
 import { RxStarFilled } from "react-icons/rx";
+import { Image_API } from "../utils/constants";
 
 const AllCards = (props) => {
   const { resData } = props;
@@ -10,14 +11,14 @@ const AllCards = (props) => {
     avgRating,
     deliveryTime,
     costForTwoString,
-  } = resData?.info;
+  } = resData?.info
   return (
 
-    <div className="box rounded p-1 m-2">
+    <div className="box rounded p-1 m-2 w-screen">
       <img
         className="card-img"
         src={
-          "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" +
+          Image_API +
           cloudinaryImageId
         }
         alt="card-img"
