@@ -1,6 +1,6 @@
 `Swiggy Clone`
-![Link](./public/img1.png)
-![link](./public//img2.png)
+![Link](./public/images/img1.png)
+![link](./public/images/img2.png)
 
 `Challenges`
 
